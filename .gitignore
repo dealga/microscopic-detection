@@ -1,0 +1,7 @@
+videos/
+*.mp4
+frames/
+*.tiff
+001.tiff
+annotated_tiff.tiff
+*.svs
