@@ -151,7 +151,7 @@ class TIFFScanner:
         for annotation in self.annotations:
             bbox = annotation["bbox"]
             category_name = self.categories.get(annotation["category_id"], "Unknown")
-            draw.rectangle(bbox, outline="red", width=2)
+            draw.rectangle(bbox, outline=(0, 255, 0), width=2)
             draw.text((bbox[0], bbox[1]), category_name, fill="yellow")
         self.slide.show()
         self.slide.save("annotated_tiff.tiff")
